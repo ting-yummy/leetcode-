@@ -1,4 +1,4 @@
-package test;
+package com.jdt.leetcode.demo;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -46,7 +46,7 @@ public class Solution {
     }
     public static int[] twoSum(int[] nums, int target) {
         //key是值，value是下标
-        Map<Integer,Integer> result = new HashMap<>();
+        Map<Integer, Integer> result = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
            int num = target-nums[i];
            if(result.containsKey(num)){
